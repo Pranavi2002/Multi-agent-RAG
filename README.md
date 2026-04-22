@@ -311,7 +311,7 @@ This project demonstrates:
 
 ---
 
-I## 👩‍💻 Author
+## 👩‍💻 Author
 ### Pranavi Kolipaka
 Feel free to connect: 
 - [LinkedIn] (https://www.linkedin.com/in/vns-sai-pranavi-kolipaka-489601208/) 
