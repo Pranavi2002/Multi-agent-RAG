@@ -1,0 +1,15 @@
+AI Agents are systems that can perceive their environment, make decisions, and take actions to achieve a goal.
+
+In modern AI systems, agents are often modular and can perform specialized tasks.
+
+Examples of AI agents in a multi-agent system include:
+- Document Fetcher Agent: loads and processes documents
+- Embedding Agent: converts text into vector representations
+- Vector Store Agent: stores and retrieves embeddings efficiently
+- LLM Agent: generates responses using a language model
+- Evaluation Agent: evaluates the quality of generated responses
+- Observability Agent: logs system performance and metrics
+
+Multi-agent architectures improve scalability, modularity, and debugging of AI systems.
+
+They are commonly used in RAG systems, autonomous workflows, and AI orchestration frameworks.

@@ -1,0 +1,33 @@
+docs/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.git
+*.log
+*.zip
+node_modules/
+
+# AI / model junk (VERY IMPORTANT)
+*.bin
+*.pt
+*.pth
+*.gguf
+*.safetensors
+models/
+model_cache/
+.cache/
+.huggingface/
+
+# huge local data
+data/
+datasets/
+vectorstore/
+faiss_index/
+
+# dev clutter
+*.zip
+*.tar
+*.gz

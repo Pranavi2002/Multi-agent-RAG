@@ -1,0 +1,14 @@
+Transformers are a deep learning architecture introduced in 2017 in the paper "Attention is All You Need".
+
+They are designed to process sequential data like text more efficiently than RNNs or LSTMs.
+
+The key innovation is the attention mechanism, which allows the model to focus on relevant parts of the input when generating each word.
+
+Transformers use three main components:
+- Query (Q)
+- Key (K)
+- Value (V)
+
+This architecture powers modern large language models like GPT, BERT, and T5.
+
+Transformers are widely used in machine translation, text generation, summarization, and question answering systems.

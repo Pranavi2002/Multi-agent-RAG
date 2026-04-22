@@ -1,0 +1,10 @@
+openai
+sentence-transformers
+faiss-cpu
+pandas
+langchain
+rich
+pypdf
+ragas
+deepeval
+datasets

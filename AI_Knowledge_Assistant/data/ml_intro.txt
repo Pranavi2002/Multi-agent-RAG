@@ -1,0 +1,10 @@
+Machine Learning is a subfield of Artificial Intelligence that enables systems to learn patterns from data without being explicitly programmed.
+
+There are three main types of machine learning:
+1. Supervised Learning - learns from labeled data (e.g., spam detection, house price prediction)
+2. Unsupervised Learning - finds patterns in unlabeled data (e.g., clustering customers)
+3. Reinforcement Learning - learns through rewards and penalties (e.g., game playing, robotics)
+
+Common algorithms include Linear Regression, Logistic Regression, Decision Trees, Random Forest, and Neural Networks.
+
+Machine Learning is widely used in recommendation systems, fraud detection, healthcare prediction, and natural language processing.

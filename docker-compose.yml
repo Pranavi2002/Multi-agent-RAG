@@ -1,0 +1,51 @@
+# Docker Compose file format version
+version: "3.9"
+
+# Define all services (containers) in the system
+services:
+
+  # Backend service (FastAPI + RAG + AI agents)
+  backend:
+    # Build Docker image from this folder
+    # build: ./Backend_Knowledge_Assistant # ignores AI_Knowledge_Assistant folder
+    build:
+      context: .
+      dockerfile: Backend_Knowledge_Assistant/Dockerfile
+
+    # Map host port 8000 → container port 8000
+    ports:
+      - "8000:8000"
+
+    # Load environment variables from .env file
+    env_file:
+      - ./Backend_Knowledge_Assistant/.env
+
+    # Ensure database container starts before backend
+    depends_on:
+      - db
+
+  # Frontend service (React + Vite)
+  frontend:
+    # Build Docker image from frontend folder
+    build: ./Frontend_Knowledge_Assistant
+
+    # Map host port 5173 → container port 5173
+    ports:
+      - "5173:5173"
+
+  # Database service (PostgreSQL)
+  db:
+    # Use official PostgreSQL image version 15
+    image: postgres:15
+
+    # Set database configuration via environment variables
+    environment:
+      POSTGRES_USER: postgres        # Database username
+      POSTGRES_PASSWORD: pranavi123    # Database password
+      POSTGRES_DB: db_knowledge_assistant            # Database name
+
+    # Expose PostgreSQL port for local access/debugging
+    ports:
+      # - "5432:5432"
+      - "5433:5432" # use this if 5432 shows as already in use
+                    # it's usually because local Postgres DB uses it

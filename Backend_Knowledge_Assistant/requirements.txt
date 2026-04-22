@@ -1,0 +1,29 @@
+fastapi
+uvicorn
+
+prometheus-client
+
+# --- AI Agent dependencies ---
+openai
+sentence-transformers
+faiss-cpu
+pandas
+langchain
+rich
+pypdf
+langdetect
+
+# # the below 5 should not be included for docker
+# ragas
+# deepeval
+# datasets
+# torch
+# transformers
+
+numpy
+scikit-learn
+
+# --- database ---
+sqlalchemy
+psycopg2-binary
+python-dotenv
